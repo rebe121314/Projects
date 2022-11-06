@@ -277,3 +277,241 @@ print('I hope you enjoyed this program and it helped you to understand your NS a
 
 print('')
 
+"""
+
+Tri tree
+
+class Node:
+
+
+    def __init__(self, character):
+        #Transforms the character into a node
+        self.character = character
+        #The children are stored in a dictionary
+        self.children = {}
+        #as in the overview the color of the node determins if it's the end of the word
+        #Black - Not the end of the word
+        #Yellow = end of the word
+        self.color = "Black"
+        self.rep = 0
+        #raise NotImplementedError()
+        
+class Trie:
+  
+    
+    def __init__(self, word_list):
+       t of strings to be inserted into the trie upon creation.
+
+        #Need to create an empty node for the root
+        self.root = Node("")
+        #Deals with an empty word to avoid errors
+        self.root.color = "Yellow"
+        #Beacuse The code creates objects we can just change the attribute of the root
+        #to easily deal with especial cases
+        #treats the root as it's own word
+        #To identify a word regardless of the case avoiding case problem
+        self.word_list = [word.lower() for word in word_list]
+        #Assumes the imput will be a list of words
+        #pass each word from the list to be inserted
+        for word in self.word_list:
+            self.insert(word)
+        #raise NotImplementedError()
+    
+    def insert(self, word):
+    
+        #marks the current node
+        current_node = self.root
+        #cheacks each character of the word
+        for character in word:
+            #If the character is not already one of the childre it creates the node
+            if character not in current_node.children:
+                #pass the character as a child node of the current character
+                current_node.children[character] = Node(character)
+            #If it was already in itonly opdate current node
+            current_node = current_node.children[character]
+        #marks the final node of the word as the end of the word/ chnage color
+        current_node.color = "Yellow"
+        current_node.rep += 1
+        #raise NotImplementedError()
+        
+    def lookup(self, word):
+insert('Prague') should lead to trie.lookup('prague') = True
+        
+        #avaoiding problems with the case of the word
+        #making teh case consistent with the word_list
+        word = word.lower()
+        #starts looking at the root
+        current_node = self.root
+        #checks each character of the word
+        for character in word:
+            #return found if it's not a children
+            if character not in current_node.children:
+                return False
+            #updates the current node
+            current_node = current_node.children[character]
+            #print("current_node",current_node.color)
+        #Checks the color of the last node to determine if teh wrd exists
+        #If the last character yellow return True
+        if current_node.color == "Yellow":
+            return True
+        #If black return false 
+        #Even if the word is a prifix of another it was never added as a full word
+        else:
+            return False
+        #raise NotImplementedError()
+
+
+    def alphabetical_list(self):
+   
+        #Given the structure of the code (requiring an input not necesary to count for non children)
+        
+        first_letters = [ i for i in self.root.children]
+        #first_letters.sort()
+        #print(first_letters)
+        lst = []
+        max_rep = []
+    
+        #for i in range(len(first_letters)):
+                
+        def preorder_traversal(node, start, end):
+                
+        #determind if it's the end of the word
+            if node.color == "Yellow":
+                #appends the firts letter with teh end
+                lst.append(start + end)
+                    
+                 #transverse thru the tree
+            for letter in node.children:
+                #holds the end of the word to be updated on each iteration
+                hold = end
+                #updates the end of the word appending the new letter
+                #varaible need to be created tomantain the order of letters
+                hold += letter
+                #print(hold)
+                #creates the child node, to perform the recurssion
+                child = node.children[letter]
+                #call the function to iterate thru the tree
+                preorder_traversal(child, start, hold)
+                
+        for i in first_letters:
+            #print(i)
+            preorder_traversal(self.root.children[i], i, "")
+            
+        lst.sort()
+        return lst
+        
+        
+       # raise NotImplementedError()
+    
+    def k_most_common(self, k):
+  
+        #Even when it appears as repeated to the albaethical list, this code has the new implementation of 
+        #the counting of the word to avoid disturbing the othre
+        
+        #Given the structure of the code (requiring an input not necesary to count for non children)
+        
+        first_letters = [ i for i in self.root.children]
+        #first_letters.sort()
+        #print(first_letters)
+        lst = []
+        max_rep = []
+    
+        #for i in range(len(first_letters)):
+                
+        def preorder_traversal(node, start, end):
+                
+        #determind if it's the end of the word
+            if node.color == "Yellow":
+                #Only difference is that the counting of the word is also present
+                lst.append([start + end, node.rep])
+                    
+                 #transverse thru the tree
+            for letter in node.children:
+                #holds the end of the word to be updated on each iteration
+                hold = end
+                #updates the end of the word appending the new letter
+                #varaible need to be created tomantain the order of letters
+                hold += letter
+                #print(hold)
+                #creates the child node, to perform the recurssion
+                child = node.children[letter]
+                #call the function to iterate thru the tree
+                preorder_traversal(child, start, hold)
+                
+        for i in first_letters:
+            #print(i)
+            preorder_traversal(self.root.children[i], i, "")
+        
+        
+        #sorts the list first in desending number numerically
+        #and then alphabetically solving the duplicate value problem
+        lst.sort(key=lambda x: (-x[1], x[0]))
+            
+        #Append the first number of elements
+        #already sorted
+        for i in range(k):
+             max_rep.append(lst[i])
+            
+                
+        #transforms into a tuple to match the requirmenets
+        final = [tuple(i) for i in max_rep]
+
+        return final
+
+#function to split text into word
+def split_text_into_words(text):
+    words = []
+    for word in text.split():
+        words.append(word)
+    return words
+
+#function to remove stop words
+def remove_stop_words(words):
+    stop_words = set(nltk.corpus.stopwords.words('english'))
+    words = [word for word in words if word not in stop_words]
+    return words
+
+#function to remove punctuation
+def remove_punctuation(words):
+    punctuations = '''!()-[];:'"\,<>./?@#$%^&*_~'''
+    words = [word for word in words if word not in punctuations]
+    return words
+
+#function to remove special characters
+def remove_special_characters(words):
+    special_characters = '''!()-[]"\,<>./?@#$%^&*_~'''
+    words = [word for word in words if word not in special_characters]
+    return words
+
+#function to remove numbers
+def remove_numbers(words):
+    words = [word for word in words if not word.isdigit()]
+    return words
+
+#function to remove whitespaces
+def remove_whitespaces(words):
+    words = [word for word in words if word.strip()]
+    return words
+
+#function to remove empty strings
+def remove_empty_strings(words):
+    words = [word for word in words if word]
+    return words
+
+#function to remove words with length less than 3
+def remove_words_with_length_less_than_3(words):
+    words = [word for word in words if len(word) > 2]
+    return words
+
+#Functions remove the same thing as above
+speech_full = get(f"https://www.gutenberg.org/files/84/84-0.txt").text
+just_text = ''.join(c for c in speech_full if c not in bad_chars)
+without_newlines = ''.join(c if (c not in ['\n', '\r', '\t']) else " " for c in just_text)
+just_words = [word for word in without_newlines.split(" ") if word != ""]
+    
+trie = Trie(just_words)
+print(" ")
+#assert the most common words
+print("")
+
+"""
