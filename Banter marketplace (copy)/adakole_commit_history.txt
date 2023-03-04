@@ -1,0 +1,277 @@
+commit 5f04c139fb7deb7bf6adfd56ce933dc9640eb1e2
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 23:33:12 2022 -0300
+
+    Made fixes as a start on search bar fixing
+
+commit ff986e5f4f52ec1064646f1ea897789c7f1a8e29
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 23:18:06 2022 -0300
+
+    Fixed bug
+
+commit d45caccfdb8ccb8a8d0811a75180a877d2b45ed2
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 17:43:57 2022 -0300
+
+    Made fixes based on design bugs
+
+commit bf122701bc6142c3c5c311117a4e9610c1d5a560
+Merge: 2a2f18e 49656e4
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 15:36:20 2022 -0300
+
+    Merge branch 'final_rebeca_branch_integration' of https://github.com/minerva-university/cs162-barter-marketplace into final_rebeca_branch_integration
+
+commit 2a2f18e14153713f4750d3eba2425467600e9e35
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 15:36:03 2022 -0300
+
+    Fixed problems with image upload
+
+commit 3ee7342d5466eaac3d7029d88d2eb0759c9a3d28
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 15:35:40 2022 -0300
+
+    Design fixes for frontend
+
+commit 058feac7b88f8691b34dee10c1fc74a13331fb23
+Merge: cd402c9 4b25a5c
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 05:40:31 2022 -0300
+
+    Merge branch 'dockerfile' of https://github.com/minerva-university/cs162-barter-marketplace into final_rebeca_branch_integration
+
+commit cd402c9d728928fc0fa46cac740bf658f7291a81
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 05:34:56 2022 -0300
+
+    Fixed code issues
+
+commit e3ca87aa614a3bf5a1f56772328c61a4d92dfff3
+Merge: 5a0a2a9 972928c
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 04:46:32 2022 -0300
+
+    Merge branch 'final_rebeca_branch_integration' of https://github.com/minerva-university/cs162-barter-marketplace into final_rebeca_branch_integration
+
+commit 5a0a2a97eef0a678e222220d5c1d506116b611e9
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 15 04:46:27 2022 -0300
+
+    Fixed csrf bug
+
+commit 4b25a5c2b7336acf08d48a07e9b5179681c7acd7
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 14 22:44:58 2022 -0300
+
+    Fixed attribute description problems
+    
+    Fixed issues with the Images and Tags creation and updates in the listing routes.
+
+commit 0568f3ad2a05d2f1b4227f6722a4ea934ad415ee
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 14 22:32:37 2022 -0300
+
+    Updates for testing
+
+commit 7b97f5cd83880de6c9173ab78d76de2ad8349d21
+Merge: aca22d0 6618e16
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 14 12:22:04 2022 -0300
+
+    Merge branch 'final_rebeca_branch_integration' of https://github.com/minerva-university/cs162-barter-marketplace into final_rebeca_branch_integration
+
+commit aca22d058cbf24044fd484bac184875ee62d8fd6
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 14 12:19:58 2022 -0300
+
+    Made fixes to the html
+
+commit ba7c474825234f790fdbef082b9e1fbb236f8f5f
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Mon Dec 12 16:44:44 2022 -0300
+
+    Fixed listing page
+
+commit 0250ca751eebe52f72288898b59e060cfa217930
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Sun Dec 11 22:05:38 2022 -0300
+
+    Added docker-compose and wireframe for tests
+
+commit 9d22bc88d25f0fe142198ec141c68567c447b1a6
+Merge: adaad6d ed0f312
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 8 02:19:30 2022 -0300
+
+    merge to dockerfile
+
+commit adaad6dc859cfe71b07b31f6386540a35820108a
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Thu Dec 8 02:17:01 2022 -0300
+
+    set up docker compose
+
+commit d5b03426f1d001ae98e1f725acfcc556547de9bc
+Merge: f18033c a1a5a3c
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 7 21:08:37 2022 -0300
+
+    Merge branch 'dockerfile' of https://github.com/minerva-university/cs162-barter-marketplace into dockerfile
+
+commit f18033c684febf2aba34f0e8cc4fb59677990429
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 7 21:08:17 2022 -0300
+
+    Started work on docker-compose
+
+commit 2d4c0b5d557622bffa6952e61c2a10b217c27e93
+Merge: 961c43b 93073e2
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 7 21:06:45 2022 -0300
+
+    Merge branch 'demo' of https://github.com/minerva-university/cs162-barter-marketplace into dockerfile
+
+commit 93073e2d6a25916bc01906836c278e1e70741dad
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 7 21:05:32 2022 -0300
+
+    Update listing.html
+
+commit 961c43bc62d9a4747debd6e384c073da89b6f799
+Merge: 153806b 1e89325
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Wed Dec 7 20:59:20 2022 -0300
+
+    Merge branch 'demo' of https://github.com/minerva-university/cs162-barter-marketplace into dockerfile
+
+commit f8dce61ed4501226bbe922b9656bd41a9fbfb3e3
+Merge: 598bcd1 9c975bc
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Tue Nov 22 01:00:11 2022 -0300
+
+    Merge pull request #17 from minerva-university/maintenance_fixes
+    
+    Maintenance fixes
+
+commit 9c975bc0dbafcef7b1d992a1a890678b5ef2589f
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Tue Nov 22 00:59:04 2022 -0300
+
+    Made file and runtime changes to code
+
+commit 2b9113875847480fb4eecff985b89cb907286c29
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Tue Nov 22 00:44:41 2022 -0300
+
+    removed redundancy
+
+commit 57a0e5af8370779ecaec5b19606b176f628f1c9e
+Merge: 69784cd 598bcd1
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Tue Nov 22 00:43:38 2022 -0300
+
+    Merge branch 'demo' of https://github.com/minerva-university/cs162-barter-marketplace into maintenance_fixes
+
+commit 69784cd30c6ea97b143543f2eb144edb65dd3940
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 18 02:19:39 2022 -0300
+
+    Fixed imports
+
+commit ad1930925440a197d3efedf760521fc0705d689b
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 18 02:19:17 2022 -0300
+
+    Updated the layout.html for import consistency
+
+commit b79c01db9020b646eff03b3833cb88eff24f4685
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 18 02:18:41 2022 -0300
+
+    Updated the layout.html for import consistency
+
+commit 598bcd15626fe0f5d3c59f35a5601cc9e8b66371
+Merge: d7fbb65 341daaa
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:45:37 2022 -0300
+
+    Merge pull request #16 from minerva-university/database_migration
+    
+    Database migration
+
+commit 341daaa937fa07579de7aa18a84c3b8da1233073
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:28:59 2022 -0300
+
+    Update config.py
+    
+    Added the database uri for testing to be in-memory
+
+commit 974e9d87fedf131ef201f540c9a8f711a5eb26d2
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:27:40 2022 -0300
+
+    Update config.py
+    
+    Added the database uri for testing to be sqlite local
+
+commit f123de543a5f72d57eedd65dc53e9efc2e1e1127
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:25:07 2022 -0300
+
+    Update models.py
+    
+    Created the model for tags
+
+commit 7ebfd02f185fcf1c83c937a830c4b6af713b4fcc
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:24:38 2022 -0300
+
+    Update models.py
+    
+    Switched the tag to hold relationships rather than an array for normalization
+
+commit e79c0e8f8b0831244647d940820901500756f2d2
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:21:54 2022 -0300
+
+    Update .env
+    
+    Added migration database for dev config
+
+commit 3a7bc1c61ab8468970863578e3fa60222a362687
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:21:24 2022 -0300
+
+    Update routes.py
+    
+    Fixed bug in homepage tagging.
+
+commit d7fbb6508e25783538c2c270dd9ebf2e11779f15
+Merge: 9d48cb8 a6e47ac
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Nov 11 22:13:45 2022 -0300
+
+    Merge pull request #15 from minerva-university/app_instantiation_fix
+    
+    App instantiation fix
+
+commit 128ce40175ddb7d7ac4909fd37a8ec510226c25c
+Merge: 87481e1 07afe33
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Oct 28 22:41:28 2022 -0300
+
+    Merge pull request #8 from minerva-university/AsmaLamg-index-suggestion
+    
+    layout-suggestion.html
+
+commit 9894609f8ef941057586be63dd2537d603654725
+Merge: d5bec6c 8cca073
+Author: Adakole Ebute <78976996+Adakole2020@users.noreply.github.com>
+Date:   Fri Oct 14 15:10:53 2022 -0300
+
+    Merge pull request #1 from minerva-university/takanto-patch-1
+    
+    fixed potential errors in upload_listing()
